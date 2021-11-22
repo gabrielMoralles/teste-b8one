@@ -20,5 +20,17 @@
 @media only screen and (max-width: 768px) {
     .row{
         flex-direction: column;
+        height: 100%;
+
+    }
+    .pt{
+        padding-top: 15px;
+    }
+    .margin-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-wrapper{
+        padding-top: 15px;
     }
 }

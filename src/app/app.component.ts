@@ -11,7 +11,7 @@ export class AppComponent {
     {
       add: false,
       id: 1,
-      fav: true,
+      fav: false,
       formerPrice: 2813.99,
       price: 2599.00,
       photoPath:'assets/imgs/product-1.png',
