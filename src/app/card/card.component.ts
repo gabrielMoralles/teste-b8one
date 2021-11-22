@@ -13,5 +13,8 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.product)
   }
-
+  public onAdd(event: any){
+    console.log(event)
+    this.product.fav = event;
+  }
 }

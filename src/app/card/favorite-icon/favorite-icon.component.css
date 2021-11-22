@@ -1,0 +1,23 @@
+.fav-stamp {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 32px;
+    cursor: pointer;
+}
+
+.bg img{
+    width: 48px;
+    height: 48px;
+}
+.bg{
+    width: 48px;
+    height: 48px;
+}
+.icon img{
+    width: 24px;
+    height: 21px;
+    top: 15px;
+    position: absolute;
+    left: 12px;
+}

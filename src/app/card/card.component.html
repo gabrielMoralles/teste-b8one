@@ -5,12 +5,13 @@
     (mouseleave)="hover = false">
     <div class="card">
         <div class="fav-stamp">
-            <div class="bg">
+            <!-- <div class="bg">
                 <img  src="assets/imgs/fav-stamp/stamp-bg-grey.png" alt="">
             </div>
             <div class="icon">
                 <img src="assets/imgs/fav-stamp/heart-grey.png" alt="">
-            </div>
+            </div> -->
+            <app-favorite-icon [fav]="product.fav" (add)="onAdd($event)"></app-favorite-icon>
         </div>
         <div class="card-body">
             <img src="assets/imgs/file.png" alt="">
