@@ -10,6 +10,7 @@ export class AppComponent {
   public products = [
     {
       add: false,
+      id: 1,
       fav: true,
       formerPrice: 2813.99,
       price: 2599.00,
@@ -19,6 +20,7 @@ export class AppComponent {
     },
     {
       add: false,
+      id: 2,
       fav: false,
       formerPrice: 4255.44,
       price: 2509.90,
