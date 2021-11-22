@@ -1,0 +1,19 @@
+.background{
+    background-color: #E5E5E5;
+}
+.vh{
+    height:100vh; 
+}
+.pt{
+    padding-top: 228px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.box :hover{
+    box-shadow: 0px 8px 24px 0px #00000014;
+
+}
