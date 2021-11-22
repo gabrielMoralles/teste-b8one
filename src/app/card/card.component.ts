@@ -11,10 +11,11 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.product)
   }
   public onAdd(event: any){
-    console.log(event)
     this.product.fav = event;
+  }
+  public onClick(){
+    this.product.add = !this.product.add;
   }
 }

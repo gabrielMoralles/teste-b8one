@@ -1,11 +1,13 @@
 
 <div 
     class="wrapper" 
-    (click)="add.emit(!fav)">
+    (mouseenter)="changeIcon(true)" 
+    (mouseleave)="changeIcon(false)"
+    (click)="onClick()">
     <div class="bg">
-        <img  src="assets/imgs/fav-stamp/stamp-bg-grey.png" alt="">
+        <img  [src]="bg" alt="">
     </div>
     <div class="icon">
-        <img src="assets/imgs/fav-stamp/heart-grey.png" alt="">
+        <img [src]="icon" alt="">
     </div>
 </div>

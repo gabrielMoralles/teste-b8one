@@ -5,22 +5,19 @@
     (mouseleave)="hover = false">
     <div class="card">
         <div class="fav-stamp">
-            <!-- <div class="bg">
-                <img  src="assets/imgs/fav-stamp/stamp-bg-grey.png" alt="">
-            </div>
-            <div class="icon">
-                <img src="assets/imgs/fav-stamp/heart-grey.png" alt="">
-            </div> -->
             <app-favorite-icon [fav]="product.fav" (add)="onAdd($event)"></app-favorite-icon>
         </div>
         <div class="card-body">
-            <img src="assets/imgs/file.png" alt="">
+            <img [src]="product.photoPath" alt="">
             <div class="title font-style">{{ product.title }}</div>
         </div>
-        <div class="prices font-style">
-            <p class="former-price"> {{ product.formerPrice | currency: 'BRL' }} </p>
-            <p class="price"> {{ product.price | currency: 'BRL' }} </p>
-            <p class="fees"> em até 10x de R$ 259,90 sem juros </p>
+        <div class="price-wrapper">
+            <div class="prices font-style">
+                <p class="former-price"> {{ product.formerPrice | currency: 'BRL' }} </p>
+                <p class="price"> {{ product.price | currency: 'BRL' }} </p>
+                <p class="fees"> em até <span class="fw-500">10x de {{product.price / 10 | currency:'BRL'}} </span> sem juros </p>
+            </div>
+            <button (click)="onClick()" class="button" [ngClass]="{ selected : product.add, hover: !product.add}"> <span *ngIf="product.add"><img class="ok" src="assets/imgs/icons/ok.png" alt=""> </span> <span>{{ product.add? 'ADICIONADO' : 'ADICIONAR' }}</span> </button>
         </div>
     </div>
 </div>
